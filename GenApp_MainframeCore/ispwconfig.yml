@@ -1,10 +1,10 @@
 !!com.compuware.ispw.wzzms.models.IspwRoot
 ispwApplication:
-  host: <hostName>
+  host: cwcc.bmc.com
   port: 16196
-  runtimeConfig: <ispwRuntime>
+  runtimeConfig: iccga
   stream: GITFLOW
-  application: <ispwApplication>
+  application: GITFLOWI
   sandbox: Y
   pathMappings:
   - path: "**/Sources/Progs"
