@@ -1,0 +1,43 @@
+14:42:44.370 INFO      TOPAZ            ***************************************
+14:42:44.370 INFO      TOPAZ            ** Execution from Topaz with options **
+14:42:44.370 INFO      TOPAZ            ***************************************
+14:42:44.370 INFO      TOPAZ            Using repository: true
+14:42:44.370 INFO      TOPAZ            Repository URL: http://cwcc.bmc.com:2020/totaltestapi/
+14:42:44.370 INFO      TOPAZ            ***************************************
+14:42:44.370 INFO      Engine           Test Scenario execution started
+14:42:44.370 INFO      Engine           Using context settings:
+  Engine Version                : 20.13.3.v20230222-1333_153
+  Environment id                : 5b5089c9787be73b59238d35
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwc2.bmc.com
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : PMIDDL0
+  Use Repository Server         : true
+  Account Information           : 
+  Dataset High Level Qualifier  : 
+14:42:44.370 INFO      Engine           Setting variables from context and context data extensions
+14:42:44.370 INFO      Engine             id: environmentId      value: 5b5089c9787be73b59238d35
+14:42:44.370 INFO      Engine             id: environmentType    value: BATCH
+14:42:44.370 INFO      Engine             id: userId             value: PMIDDL0
+14:42:44.370 INFO      Engine             id: accountingInfo     value: 
+14:42:44.370 INFO      Engine             id: datasetHQL         value: 
+14:42:44.370 INFO      Unittest         Interpreting Unittest of module: CWXTCOB testscenario path: CWXTCOB_Test1.testscenario
+14:42:44.386 INFO      Unittest         Using JCL skeleton to submit JCL
+14:42:47.555 INFO      CWC2 Batch       Sending Job execution request to Host 
+14:42:52.716 INFO      CWC2 Batch       Job execution completed with status:
+  Job status     : COMPLETED
+  Job status msg : Job PMIDDL0A(J0381818) ended with return code: 0000
+  Job name       : PMIDDL0A
+  Job id         : J0381818
+  Return code    : 0000
+  Abend code     : 
+  Abend reason   : 
+14:42:54.591 INFO      Unittest         Execution completed
+14:42:54.591 INFO      Engine           Test Scenario execution ended

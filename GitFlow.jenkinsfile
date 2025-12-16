@@ -1,0 +1,17 @@
+@Library('GitFlow_Shared_Lib@main') _
+
+String demoEnvironment      = '<demoEnvironment>'
+String hostCredentialsId    = '<hostCredentials>'                   /* Change to Jenkins credentials ID for Host userid/password            */
+String cesCredentialsId     = '<cesCredentials>'                    /* Change to Jenkins credentials ID for CES token                       */
+String gitRepoUrl           = '<gitRepoUrl>'                        /* Change "<repo>" to user specific repository name                     */
+String gitCredentialsId     = '<jenkinsGitCredentialsId>'           /* Change to Jenkins credentials ID for GitHub personal access token    */
+String ccRepo               = '<codeCoverageRepo>'                  /* Change to user specific code coverage repository                     */
+
+GitFlow_Main(
+    demoEnvironment:    demoEnvironment,   
+    hostCredentialsId:  hostCredentialsId,  
+    cesCredentialsId:   cesCredentialsId,      
+    gitRepoUrl:         gitRepoUrl,            
+    gitCredentialsId:   gitCredentialsId,
+    ccRepo:             ccRepo            
+)
