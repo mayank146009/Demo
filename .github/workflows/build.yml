@@ -1,0 +1,33 @@
+on: [push]
+
+jobs:
+  run-ispw-generate:
+    runs-on: AP-NGILFORD-W2-GHA
+    name: A job to sync git source into Code Pipeline, then generate it on the mainframe
+    steps:
+      - name: Sync step
+        uses: bmc-compuware/ispw-sync@v20.6.1.gtk
+        id: sync
+        with:
+          host: 'cwcc.bmc.com'
+          port: 16196
+          uid: ${{ secrets.TSOUSER }}
+          pass: ${{ secrets.TSOPASS }}
+          runtimeConfiguration: 'ISPW'
+          stream: 'GITFLOW'
+          application: 'GITFLOWI'
+          checkoutLevel: 'DEV1'
+          gitUid: 'admin'
+          gitToken: ${{ secrets.GITHUB_TOKEN }}
+          showEnv: true
+      - name: Generate
+        uses: bmc-compuware/ispw-generate@v1
+        id: generate
+        with:
+          ces_url: 'https://CES:2020/'
+          ces_token: ${{ secrets.CES_TOKEN }}
+          srid: 'host-37733'
+          runtime_configuration: 'ISPW'
+          generate_automatically: ${{ steps.sync.outputs.automaticBuildJson }}
+      - name: Get the number of generate failures
+        run: echo "The number of generate failures is ${{ steps.generate.outputs.generate_failed_count }}"
