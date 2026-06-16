@@ -17,10 +17,8 @@ ispwApplication:
     types:
     - fileExtension: cbl
       ispwType: COB
-      progType: 'No'
     - fileExtension: pli
       ispwType: PLI
-      progType: 'No'
   - path: "**/Sources/Jobs"
     types:
     - fileExtension: jcl
