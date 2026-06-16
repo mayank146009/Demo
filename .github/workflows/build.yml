@@ -7,7 +7,7 @@ jobs:
   job_sync:
     runs-on: [self-hosted]
     env:
-       Win_Topaz_Location: ${{ vars.TOPAZ_LOCATION }}
+       Win_Topaz_Location: 'C:\WorkbenchCLI243GA'
     name: Code Pipeline Sync on self-hosted runners
     steps:
       - name: Checkout
