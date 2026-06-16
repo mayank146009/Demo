@@ -1,10 +1,11 @@
 !!com.compuware.ispw.wzzms.models.IspwRoot
 ispwApplication:
-  host: cwcc.bmc.com
-  port: 16196
-  runtimeConfig: iccga
-  stream: GITFLOW
-  application: GITFLOWI
+  host: cw09.bmc.com
+  port: 46724
+  runtimeConfig: tptp
+  stream: TOPAZ
+  application: HARY
+  subAppl: HARY
   sandbox: Y
   pathMappings:
   - path: "**/Sources/Progs"
