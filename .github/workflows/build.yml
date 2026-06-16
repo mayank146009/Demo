@@ -20,7 +20,7 @@ jobs:
         with:
           host: 'cwcc.bmc.com'
           port: 16196
-          uid: 'HAUNXG0'
+          uid: 'TEST'
           pass: ${{ secrets.ISPW_USER_PWD }}
           runtimeConfiguration: 'iccga'
           stream: 'GITFLOW'
@@ -28,7 +28,7 @@ jobs:
           subAppl: 'GITFLOWI'
           checkoutLevel: 'UNIT'
           gitUid: '@neilg001abc'
-          gitToken: ${{ secrets.NEILG001ABC_GITHUB_TOKEN }}
+          gitToken: ${{ secrets.TEST }}
           winTopazPath: ${{env.Win_Topaz_Location }}
           ispwConfigPath: "GenApp_MainframeCore/ispwconfig.yml"
           assignmentPrefix: "GFLI"
