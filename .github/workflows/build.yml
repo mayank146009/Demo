@@ -26,7 +26,7 @@ jobs:
           stream: 'TOPAZ'
           application: 'HARY'
           subAppl: 'HARY'
-          checkoutLevel: 'FIX'
+          checkoutLevel: 'DEV2'
           gitUid: 'mayajain'
           gitToken: ${{ secrets.TEST }}
           winTopazPath: ${{env.Win_Topaz_Location }}
