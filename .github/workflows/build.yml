@@ -18,16 +18,16 @@ jobs:
         uses: bmc-compuware/ispw-sync-local@v2.0
         id: sync-local
         with:
-          host: 'cwcc.bmc.com'
+          host: 'CW09.bmc.com'
           port: 16196
-          uid: 'TEST'
-          pass: ${{ secrets.ISPW_USER_PWD }}
-          runtimeConfiguration: 'iccga'
-          stream: 'GITFLOW'
-          application: 'GITFLOWI'
-          subAppl: 'GITFLOWI'
-          checkoutLevel: 'UNIT'
-          gitUid: '@neilg001abc'
+          uid: ${{ secrets.USER_NAME }}
+          pass: ${{ secrets.PWD }}
+          runtimeConfiguration: 'TPTP'
+          stream: 'TOPAZ'
+          application: 'HARY'
+          subAppl: 'HARY'
+          checkoutLevel: 'FIX'
+          gitUid: 'mayajain'
           gitToken: ${{ secrets.TEST }}
           winTopazPath: ${{env.Win_Topaz_Location }}
           ispwConfigPath: "GenApp_MainframeCore/ispwconfig.yml"
