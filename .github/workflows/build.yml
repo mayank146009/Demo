@@ -29,7 +29,7 @@ jobs:
           checkoutLevel: 'UNIT'
           gitUid: '@neilg001abc'
           gitToken: ${{ secrets.NEILG001ABC_GITHUB_TOKEN }}
-          winTopazPath: ${{ vars.TOPAZ_LOCATION }}
+          winTopazPath: ${{env.Win_Topaz_Location }}
           ispwConfigPath: "GenApp_MainframeCore/ispwconfig.yml"
           assignmentPrefix: "GFLI"
           showEnv: true
