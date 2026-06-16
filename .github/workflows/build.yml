@@ -19,19 +19,19 @@ jobs:
         id: sync-local
         with:
           host: 'CW09.bmc.com'
-          port: 16196
+          port: 47624
           uid: ${{ secrets.USER_NAME }}
           pass: ${{ secrets.PWD }}
           runtimeConfiguration: 'TPTP'
           stream: 'TOPAZ'
           application: 'HARY'
           subAppl: 'HARY'
-          checkoutLevel: 'DEV2'
+          checkoutLevel: 'DEV1'
           gitUid: 'mayajain'
           gitToken: ${{ secrets.TEST }}
           winTopazPath: ${{env.Win_Topaz_Location }}
           ispwConfigPath: "GenApp_MainframeCore/ispwconfig.yml"
-          assignmentPrefix: "GFLI"
+          assignmentPrefix: "HARY"
           showEnv: true
       - name: Generate
         uses: bmc-compuware/ispw-generate@v1
